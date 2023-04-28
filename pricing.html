@@ -5,72 +5,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/pricing.css">
+  <link rel="stylesheet" href="./styles/pricing-media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
+
 <body>
+   <div id="root">
+    <nav class="nav-bar">
+      <a href="#" onclick="location.reload();">
+        <img src="./assets/pricing/mobile/Group (2).svg" alt="logo">
+      </a>
+      <img src="./assets/pricing/mobile/Group 2.svg"  class="img-1">
+      <img src="./assets/home/mobile/Combined Shape (1).svg" alt="X" class="img-2">
+      <div class="links" id="links">
+        <a class="link" href="#">Stories</a>
+        <a class="link" href="#">Features</a>
+        <a class="link" href="#">Pricing</a>
+        <div class="line"></div>
+        <a class="link button" href="#">Get an Invite</a>
+      </div>
+    </nav>
 
-  Stories
-  Features
-  Pricing
+    <section class="header-section">
+      <div class="text-container">
+        <h1 class="title"> PRICING </h1>
+        <p> Create a your stories, Photosnap is a platform for photographers and visual storytellers.
+           It’s the simple way to create and share your photos. </p>
+      </div>
+      <img src="./assets/pricing/mobile/hero.jpg" alt="mobile-hero" class="hero-mobile">
+      <img src="./assets/pricing/tablet/hero.jpg" alt="tablet-hero" class="tablet-hero">
+      <img src="./assets/pricing/desktop/hero.jpg" alt="desktop-hero" class="desktop-hero">
+    </section>
 
-  Get an invite
+    <section class="switcher">
+      <h3>Monthly</h3>
+      <label class="switch">
+        <input type="checkbox" id="payment-switch">
+        <span class="slider round"></span>
+      </label>
+      <h3>Yearly</h3>
+    </section>
 
-  Pricing
+    <section class="plan-info">
+      <div class="plan one">
+        <div class="left">
+        <h2> Basic </h2>
+        <p> Includes basic usage of our platform. Recommended for new and aspiring photographers. </p>
+        </div>
+        <div class="right">
+        <div class="then">
+        <h3 class="price" id="basic-price"> $19.00 </h3>
+        <h4 id="monthly"> per month </h4>
+        </div>
+        </div>
+        <button class="pick-plan"> PICK PLAN </button>
+      </div>
 
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
+      <div class="plan two">
+        <div class="left">
+        <h2> Pro </h2>
+        <p> More advanced features available. Recommended for photography veterans and professionals. </p>
+        </div>
+        <div class="right">
+        <div class="then">>
+        <h3 class="price" id="pro-price"> $39.00 </h3>
+        <h4 id="pro-monthly"> per month </h4>
+        </div>
+        </div>
+        <button class="pick-plan"> PICK PLAN </button>
+      </div>
 
-  Monthly
-  Yearly
+      <div class="plan three">
+        <div class="left">
+        <h2> Business </h2>
+        <p> Additional features available such as more detailed metrics. Recommended for business owners. </p>
+        </div>
+        <div class="right">
+        <div class="then">
+        <h3 class="price" id="business-price"> $99.00 </h3>
+        <h4 id="business-monthly"> per month </h4>
+        </div>
+        </div>
+        <button class="pick-plan"> PICK PLAN </button>
+      </div>
+    </section>
 
-  Basic
-  Includes basic usage of our platform. Recommended for new and aspiring photographers.
-  $19.00 per month
-  $190.00 per year
-  Pick Plan
+    <section class="compare">
+      <h2 class="heading">COMPARE</h2>
+      <div class="item top">
+          <h3 class="name"> THE FEATURES </h3>
+          <h3 class="top-text"> BASIC </h3>
+          <h3 class="top-text"> PRO</h3>
+          <h3 class="top-text"> BUSINESS </h3>
+       </div>
 
-  Pro
-  More advanced features available. Recommended for photography veterans and professionals.
-  $39.00 per month
-  $390.00 per year
-  Pick Plan
+        <div class="item">
+          <h3 class="name"> UNLIMITED STORY POSTING </h3>
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+        </div>
+        <div class="item">
+          <h3 class="name"> UNLIMITED PHOTO UPLOAD </h3>
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+        </div>
+        <div class="item">
+          <h3 class="name"> EMBEDDING CUSTOM CONTENT </h3>
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg" class="hide">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+        </div>
+        <div class="item">
+          <h3 class="name"> CUSTOMIZE METADATA </h3>
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg" class="hide">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+        </div>
+        <div class="item">
+          <h3 class="name"> ADVANCED METRICS </h3>
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg" class="hide">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg" class="hide">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+        </div>
+        <div class="item">
+          <h3 class="name"> PHOTO DOWNLOADS </h3>
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg" class="hide">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg" class="hide">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+        </div>
+        <div class="item">
+          <h3 class="name"> SEARCH ENGINE INDEXING </h3>
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg" class="hide"> 
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg" class="hide">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+        </div>
+        <div class="item">
+          <h3 class="name"> CUSTOM ANALYTICS </h3>
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg" class="hide">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg" class="hide">
+          <img src="./assets/pricing/mobile/Path 5 Copy.svg">
+        </div>
 
-  Business
-  Additional features available such as more detailed metrics. Recommended for business owners.
-  $99.00 per month
-  $990.00 per year
-  Pick Plan
-
-  Compare
-
-  The Features
-
-  Basic
-  Pro
-  Business
-
-  Unlimited Story Posting
-  Unlimited Photo Upload
-  Embedding Custom Content
-  Customize Metadata
-  Advanced Metrics
-  Photo Downloads
-  Search Engine Indexing
-  Custom Analytics
-
-  We're in Beta. Get your invite today!
-  
-  Get an invite
-
-  Home
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
+     </section>
+       </div>
+      
+   <script src="./js/nav.js"></script>
+   <script src="./js/pricing.js"></script>
 
 </body>
 </html>
