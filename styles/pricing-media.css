@@ -1,4 +1,5 @@
 @media screen and (min-width:768px){
+    /* this is the nav section's media */
     .links{
         display: flex;
         flex-direction: row;
@@ -33,6 +34,8 @@
         padding: 28px 40px;
         gap: 45px;
     }
+ /* the pricing page's media starts from here */
+ 
     .header-section{
         display: flex;
         flex-direction: row;
@@ -61,7 +64,7 @@
         width: 164px;
         transform: rotate(90deg);
         position: absolute;
-        left: -15.8%;
+        left: -82px;
         top: 50%;
     }
     .plan{

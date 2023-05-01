@@ -3,9 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* this is general css styles for all pages. */
 body{
   height: 100vh;
   font-family: 'DM Sans', sans-serif;
+}
+:root{
+  --white-text:#FFFFFF;
+  --black-text:#000000;
 }
 .nav-bar{
   display: flex;
@@ -31,14 +36,14 @@ body{
   left: -100%;
   width: 100%;
   height: 253px;
-  background-color: #fff;
+  background-color: var(--white-text);
   padding-top: 32px;
   top: 7%;
 }
 .link{
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
+  color: var(--black-text);
   font-weight: 700;
   letter-spacing: .125rem;
   font-size: 15px;
@@ -52,18 +57,18 @@ body{
 .button{
   display: inline-block;
   padding: .9rem 5.3rem;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black-text);
+  color: var(--white-text);
   cursor: pointer;
 }
 .button:hover{
-  color: #000;
+  color: var(--black-text);
   background-color: #dfdfdf;
   cursor: pointer;
   transition: 0.9s;
 }
 .line{
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--black-text);
   opacity: 25%;
   width: 310px;
   height: 1px;
