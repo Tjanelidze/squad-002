@@ -87,6 +87,18 @@ a {
   color: white;
 }
 
+.invite {
+  display: flex;
+  gap: 16px;
+  transition: 0.5s;
+}
+.invite:hover {
+  text-decoration: underline;
+  gap: 32px;
+  margin-right: -16px;
+}
+
+
 @media screen and (min-width: 768px) {
   .hero-mobile {
     display: none;

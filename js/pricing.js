@@ -17,6 +17,7 @@
       yearlyHeader.style.color = "#0009";
     }
   });
+// this function changes month price to year price, and the number is rounded to two decimal places.
 
   paymentSwitch.addEventListener('change',function() {
     if(this.checked){
