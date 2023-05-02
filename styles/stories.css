@@ -1,0 +1,169 @@
+nav {
+  background-color: black;
+  color: white;
+}
+.hero-mobile {
+  width: 100%;
+}
+.nav-info {
+  padding: 48px 30px;
+}
+h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 3.33px;
+}
+p {
+  opacity: 60%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+.nav-story {
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.date {
+  font-size: 13px;
+  opacity: 75%;
+  margin-bottom: 24px;
+}
+a {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.read-story {
+  display: flex;
+  gap: 16px;
+  transition: 0.5s;
+  margin-top: 12px;
+}
+.read-story:hover {
+  text-decoration: underline;
+  gap: 32px;
+}
+main {
+  display: grid;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.read-pictures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+hr {
+  opacity: 25%;
+}
+.picture {
+  position: relative;
+  display: flex;
+  transition: all 0.5s ease-in;
+}
+.picture-date {
+  color: white;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.picture:hover {
+  transform: translateY(-2.4rem);
+  cursor: pointer;
+}
+
+.picture::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0.6rem;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.picture:hover::after {
+  z-index: 10;
+}
+
+.pictures-img {
+  width: 100%;
+}
+
+.picture-content {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0.27%,
+    rgba(0, 0, 0, 0.661222) 100%
+  );
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* padding: 0 3.2rem 4rem 3.3rem; */
+  padding: 0 41px 40px 41px;
+}
+
+.picture-author {
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  /* font-size: 1.3rem; */
+  margin-bottom: 16px;
+  margin-top: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-mobile {
+    display: none;
+  }
+  nav {
+    background: url(/assets/stories/tablet/moon-of-appalacia.jpg) no-repeat;
+    background-size: 100%;
+  }
+  .nav-info {
+    padding: 122px 30px;
+    max-width: 60%;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1440px) {
+  nav {
+    background: url(/assets/stories/desktop/moon-of-appalacia.jpg) no-repeat;
+    background-size: 100%;
+  }
+  .nav-info {
+    max-width: 40%;
+    padding: 122px 112px;
+  }
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
