@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  box-sizing: border-box;
+  color: var(--black);
+}
+
+p,
+span {
+  font-weight: 400;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.3rem 2.4rem;
+  position: relative;
+  background-color: var(--white);
+}
+
+/* classes to make menu button work in mobile */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.overlay {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+/* Similar styles for two or more sections */
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+hr {
+  opacity: 0.25;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.menu-items:hover {
+  opacity: 0.3;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-white {
+  color: var(--white);
+}
+
+.btn-black {
+  color: var(--black);
+}
+
+.feature-heading,
+.picture-heading {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.feature-p,
+.primary-p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  opacity: 0.6;
+}
+
+/* nav bar */
+.nav-bar {
+  text-align: center;
+  background-color: var(--white);
+  padding: 3.25rem;
+  position: absolute;
+  top: 7.2rem;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0.25rem;
+}
+
+/* header menu */
+
+header .menu {
+  gap: 2rem;
+}
+
+/* line */
+.nav-line {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* btn */
+.btn-header {
+  display: block;
+  background-color: var(--black);
+  padding: 1.4rem 6.8rem;
+  transition: all 0.4s linear;
+}
+
+.btn-header:hover {
+  background-color: #dfdfdf;
+  color: var(--black);
+}
+
+/* main */
+main {
+  position: relative;
+}
+
+/* section 1 - section 3(description-sections) */
+.description-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content {
+  padding: 7.2rem 2.4rem 7.2rem 3.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.primary-heading {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: 0.33rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.8rem;
+  margin-top: 2.3rem;
+}
+
+.btn-box:hover {
+  cursor: pointer;
+}
+
+.btn-box:hover > .arrow-icon {
+  transform: translateX(-0.5rem);
+  transition: all 0.5s ease-out;
+}
+
+.btn-box:hover > .btn {
+  text-decoration: underline;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.2rem;
+  transition: all 1s;
+}
+
+/* section 1 */
+.section-1-content {
+  background-color: var(--black);
+  color: var(--white);
+  position: relative;
+}
+
+.section-1-rectangle {
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+  width: 12.8rem;
+  height: 0.6rem;
+  position: absolute;
+  top: 0;
+}
+
+.arrow-white {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(109deg) brightness(102%) contrast(103%);
+}
+
+/* Section 2 - section 3 */
+
+.btn-box-black {
+  gap: 2.6rem;
+}
+
+.section-3-content {
+  padding: 9.2rem 2.4rem 9.2rem 3.3rem;
+}
+
+/* Section 4 (pictures section) */
+.pictures-section {
+  display: grid;
+}
+
+.picture {
+  position: relative;
+  display: flex;
+  transition: all 0.5s ease-in;
+}
+
+.picture:hover {
+  transform: translateY(-2.4rem);
+  cursor: pointer;
+}
+
+.picture::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0.6rem;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.picture:hover::after {
+  z-index: 10;
+}
+
+.pictures-img {
+  width: 100%;
+}
+
+.picture-content {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0.27%,
+    rgba(0, 0, 0, 0.661222) 100%
+  );
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 3.2rem 4rem 3.3rem;
+}
+
+.picture-author {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  margin-bottom: 1.6rem;
+  margin-top: 0.4rem;
+}
+
+.pictures-btn-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* section 5 (features section) */
+.features-section {
+  display: grid;
+  padding: 8rem 3.3rem;
+  gap: 5.7rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  text-align: center;
+}
+
+.feature:nth-of-type(odd) .feature-icon {
+  margin-bottom: 3.2rem;
+}
+
+.feature:nth-of-type(2) .feature-icon {
+  margin-bottom: 5rem;
+}
+
+/* footer */
+footer {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11rem;
+  padding-top: 5.6rem;
+  padding-bottom: 5.6rem;
+  color: var(--white);
+}
+
+/* first div */
+.footer-first-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.3rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.3rem;
+}
+
+.icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(109deg) brightness(102%) contrast(103%);
+  transition: filter 500ms linear;
+}
+
+.icon:hover {
+  cursor: pointer;
+  filter: unset;
+}
+
+footer .menu {
+  gap: 1.9rem;
+  text-align: center;
+}
+
+footer .menu-items:link,
+footer .menu-items:visited {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+/* second div */
+
+.footer-second-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.4rem;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  opacity: 0.5;
+}
+
+/* RESPONSIVE */
+
+/* tablet */
+@media (min-width: 765px) {
+  /* hide menu button */
+  .hidden {
+    visibility: visible;
+  }
+
+  .modal-btns,
+  .overlay {
+    display: none;
+  }
+
+  /* similar styles for two or more sections */
+  .menu {
+    flex-direction: row;
+  }
+
+  .btn-header,
+  .menu-items:link,
+  .menu-items:visited {
+    font-size: 1.2rem;
+    line-height: 1.56rem;
+    letter-spacing: 0.2rem;
+  }
+
+  /* header */
+  header {
+    padding: 1.6rem 3.9rem;
+    gap: 4rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+  }
+
+  .nav-bar {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  header .menu {
+    gap: 3.7rem;
+  }
+
+  .btn-header {
+    padding: 1.2rem 2.4rem;
+  }
+
+  /* main */
+  /* description sections */
+  .description-sections {
+    flex-direction: row-reverse;
+  }
+
+  .description-sections:nth-of-type(2) {
+    flex-direction: row;
+  }
+
+  .primary-heading {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 2.1rem;
+  }
+
+  .btn-box {
+    margin-top: 4.8rem;
+  }
+
+  /* section 1 - section 3 images */
+  .section-1-img {
+    content: url(../assets/home/tablet/create-and-share.jpg);
+  }
+
+  .section-2-img {
+    content: url(../assets/home/tablet/beautiful-stories.jpg);
+  }
+
+  .section-3-img {
+    content: url(../assets/home/tablet/designed-for-everyone.jpg);
+  }
+
+  /* section 1 */
+  .section-1-content {
+    padding: 17rem 5.4rem;
+  }
+
+  .section-1-rectangle {
+    width: 0.6rem;
+    height: 30.4rem;
+    top: auto;
+    left: 0;
+  }
+
+  /* section 2 */
+
+  .section-2-content {
+    padding: 13.6rem 5.4rem;
+  }
+
+  /* section 3 */
+
+  .section-3-content {
+    padding: 16rem 5.4rem;
+  }
+
+  /* pictures-section */
+  .pictures-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50rem);
+  }
+
+  .picture-content {
+    padding: 0 4rem 4rem;
+  }
+
+  /* section 5 */
+  .features-section {
+    padding: 12rem 15.5rem;
+    gap: 8rem;
+  }
+
+  /* footer */
+  footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 6.4rem 3.9rem;
+  }
+
+  .footer-first-div {
+    align-items: flex-start;
+    position: relative;
+  }
+
+  footer .menu {
+    gap: 2.6rem;
+  }
+
+  .icons {
+    position: absolute;
+    top: 13.5rem;
+  }
+
+  .footer-second-div {
+    gap: 12rem;
+    align-items: flex-end;
+  }
+
+  footer .btn-box {
+    margin: 0;
+  }
+}
+
+/* desktop */
+@media (min-width: 1440px) {
+  header {
+    padding: 1.6rem 16.5rem;
+    gap: 25rem;
+  }
+
+  /* main */
+  /* section 1 - section 3 images */
+  .section-1-img {
+    content: url(../assets/home/desktop/create-and-share.jpg);
+  }
+
+  .section-2-img {
+    content: url(../assets/home/desktop/beautiful-stories.jpg);
+  }
+
+  .section-3-img {
+    content: url(../assets/home/desktop/designed-for-everyone.jpg);
+  }
+
+  .section-content {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+
+  /* pictures section */
+  .pictures-section {
+    grid-template-columns: repeat(4, 36rem);
+    grid-template-rows: 50rem;
+  }
+
+  .picture:first-child .pictures-img {
+    content: url(../assets/stories/desktop/mountains.jpg);
+  }
+
+  .picture:nth-child(2) .pictures-img {
+    content: url(../assets/stories/desktop/cityscapes.jpg);
+  }
+
+  .picture:nth-child(3) .pictures-img {
+    content: url(../assets/stories/desktop/18-days-voyage.jpg);
+  }
+
+  .picture:nth-child(4) .pictures-img {
+    content: url(../assets/stories/desktop/architecturals.jpg);
+  }
+
+  /* features section */
+  .features-section {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .feature:nth-of-type(2) {
+    justify-content: flex-end;
+  }
+
+  /* footer */
+  footer {
+    padding: 6.4rem 16.5rem 6.4rem 17rem;
+  }
+
+  footer .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.9rem;
+  }
+
+  .icons {
+    top: 10rem;
+  }
+
+  .footer-nav-bar {
+    position: absolute;
+    left: 26rem;
+  }
+
+  .footer-second-div {
+    gap: 8.5rem;
+  }
+}
