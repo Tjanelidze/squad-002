@@ -50,6 +50,16 @@ div.links a {
 div.links a:hover {
   opacity: 30%;
 }
+.invite {
+  display: flex;
+  gap: 16px;
+  transition: 0.5s;
+}
+.invite:hover {
+  text-decoration: underline;
+  gap: 32px;
+  margin-right: -16px;
+}
 .footer-last {
   display: flex;
   flex-direction: column;
