@@ -1,4 +1,7 @@
-/* this css style is for only pricing page */
+:root{
+    --white-text:#FFFFFF;
+    --black-text:#000000;
+}
 .hero-mobile{
     width: 100%;
 }
