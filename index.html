@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Frontend Mentor | Photosnap Website Challenge</title>
+  </head>
+  <!-- body -->
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- logo -->
+      <a href="index.html">
+        <img
+          class="logo"
+          src="assets/shared/desktop/logo.svg"
+          alt="Photosnap logo"
+        />
+      </a>
+      <!-- menu icon for mobile version -->
+      <div class="modal-btns">
+        <img
+          class="show-modal"
+          src="assets/shared/mobile/menu.svg"
+          alt="menu icon"
+        />
+        <img
+          class="close-modal hidden"
+          src="assets/shared/mobile/close.svg"
+          alt=""
+        />
+      </div>
+      <!-- nav -->
+      <nav class="nav-bar hidden">
+        <ul class="menu header-menu">
+          <li>
+            <a class="menu-items btn-black" href="stories.html">Stories</a>
+          </li>
+          <li>
+            <a class="menu-items btn-black" href="features.html">Features</a>
+          </li>
+          <li>
+            <a class="menu-items btn-black" href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+        <hr class="nav-line" />
+        <a class="btn-header btn-white" href="#"> Get an invite</a>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- overlay -->
+      <div class="overlay hidden"></div>
+      <!-- first section -->
+      <section class="description-sections">
+        <!-- image -->
+        <img
+          class="section-1-img"
+          src="assets/home/mobile/create-and-share.jpg"
+          alt="man looking to lake with camera in hands"
+        />
+        <!-- content -->
+        <div class="section-content section-1-content">
+          <div class="section-1-rectangle"></div>
+          <h1 class="primary-heading">Create and share your photo stories.</h1>
+          <p class="primary-p">
+            Photosnap is a platform for photographers and visual storytellers.
+            We make it easy to share photos, tell stories and connect with
+            others.
+          </p>
+          <div class="btn-box">
+            <a class="btn btn-white" href="#">Get an invite</a>
+            <img
+              class="arrow-icon arrow-white"
+              src="assets/shared/desktop/arrow.svg"
+              alt="arrow icon"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- second section -->
+      <section class="description-sections">
+        <!-- image -->
+        <img
+          class="section-2-img"
+          src="assets/home/mobile/beautiful-stories.jpg"
+          alt="leptop picture"
+        />
+        <!-- content -->
+        <div class="section-content section-2-content">
+          <h1 class="primary-heading">BEAUTIFUL STORIES EVERY TIME</h1>
+          <p class="primary-p">
+            We provide design templates to ensure your stories look terrific.
+            Easily add photos, text, embed maps and media from other networks.
+            Then share your story with everyone.
+          </p>
+          <div class="btn-box btn-box-black">
+            <a class="btn btn-black" href="#">View the stories</a>
+            <img
+              class="arrow-icon"
+              src="assets/shared/desktop/arrow.svg"
+              alt="arrow icon"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- third section -->
+      <section class="description-sections">
+        <!-- image -->
+        <img
+          class="section-3-img"
+          src="assets/home/mobile/designed-for-everyone.jpg"
+          alt="Camera man"
+        />
+        <!-- content -->
+        <div class="section-content section-3-content">
+          <h1 class="primary-heading">DESIGNED FOR EVERYONE</h1>
+          <p class="primary-p">
+            Photosnap can help you create stories that resonate with your
+            audience. Our tool is designed for photographers of all levels,
+            brands, businesses you name it.
+          </p>
+          <div class="btn-box btn-box-black">
+            <a class="btn btn-black" href="#">View the stories</a>
+            <img
+              class="arrow-icon"
+              src="assets/shared/desktop/arrow.svg"
+              alt="arrow icon"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- forth section -->
+      <section class="pictures-section">
+        <!-- div 1 -->
+        <div class="picture">
+          <img
+            class="pictures-img"
+            src="assets/stories/mobile/mountains.jpg"
+            alt="The Mountains"
+          />
+          <!-- content -->
+          <div class="picture-content">
+            <h2 class="picture-heading">The Mountains</h2>
+            <span class="picture-author">by John Appleseed</span>
+            <hr class="picture-content-line" />
+            <div class="pictures-btn-box">
+              <a class="btn btn-read btn-white" href="#">READ STORY</a>
+              <img
+                class="arrow-icon arrow-white"
+                src="assets/shared/desktop/arrow.svg"
+                alt="arrow icon"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- div 2 -->
+        <div class="picture">
+          <img
+            class="pictures-img"
+            src="assets/stories/mobile/cityscapes.jpg"
+            alt="Sunset Cityscapes"
+          />
+          <!-- content -->
+          <div class="picture-content">
+            <h2 class="picture-heading">Sunset Cityscapes</h2>
+            <span class="picture-author">by Benjamin Cruz</span>
+            <hr class="picture-content-line" />
+            <div class="pictures-btn-box">
+              <a class="btn btn-read btn-white" href="#">READ STORY</a>
+              <img
+                class="arrow-icon arrow-white"
+                src="assets/shared/desktop/arrow.svg"
+                alt="arrow icon"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- div 3 -->
+        <div class="picture">
+          <img
+            class="pictures-img"
+            src="assets/stories/mobile/18-days-voyage.jpg"
+            alt=""
+          />
+          <!-- content -->
+          <div class="picture-content">
+            <h2 class="picture-heading">18 Days Voyage</h2>
+            <span class="picture-author">by Alexei Borodin</span>
+            <hr class="picture-content-line" />
+            <div class="pictures-btn-box">
+              <a class="btn btn-read btn-white" href="#">READ STORY</a>
+              <img
+                class="arrow-icon arrow-white"
+                src="assets/shared/desktop/arrow.svg"
+                alt="arrow icon"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- div 4 -->
+        <div class="picture">
+          <img
+            class="pictures-img"
+            src="assets/stories/mobile/architecturals.jpg"
+            alt="Sunset Cityscapes"
+          />
+          <!-- content -->
+          <div class="picture-content">
+            <h2 class="picture-heading">Architecturals</h2>
+            <span class="picture-author">by Samantha Brooke</span>
+            <hr class="picture-content-line" />
+            <div class="pictures-btn-box">
+              <a class="btn btn-read btn-white" href="#">READ STORY</a>
+              <img
+                class="arrow-icon arrow-white"
+                src="assets/shared/desktop/arrow.svg"
+                alt="arrow icon"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- fifth section -->
+      <section class="features-section">
+        <!-- div 1 -->
+        <div class="feature">
+          <img
+            class="feature-icon"
+            src="assets/features/desktop/responsive.svg"
+            alt="responsive icon"
+          />
+          <h3 class="feature-heading">100% Responsive</h3>
+          <p class="feature-p">
+            No matter which the device you’re on, our site is fully responsive
+            and stories look beautiful on any screen.
+          </p>
+        </div>
+        <!-- div 2 -->
+        <div class="feature">
+          <img
+            class="feature-icon"
+            src="assets/features/desktop/no-limit.svg"
+            alt="no-limit icon"
+          />
+          <h3 class="feature-heading">No Photo Upload Limit</h3>
+          <p class="feature-p">
+            Our tool has no limits on uploads or bandwidth. Freely upload in
+            bulk and share all of your stories in one go.
+          </p>
+        </div>
+        <!-- div 3 -->
+        <div class="feature">
+          <img
+            class="feature-icon"
+            src="assets/features/desktop/embed.svg"
+            alt="embed icon"
+          />
+          <h3 class="feature-heading">Available to Embed</h3>
+          <p class="feature-p">
+            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+            videos, Google Maps, and more.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="overlay hidden"></div>
+      <div class="footer-first-div">
+        <!-- logo -->
+        <a href="index.html">
+          <img
+            class="logo"
+            src="assets/shared/desktop/footer-logo.svg"
+            alt="Photosnap logo"
+          />
+        </a>
+        <!-- icons -->
+        <div class="icons">
+          <img
+            class="icon"
+            src="assets/shared/desktop/facebook.svg"
+            alt="facebook"
+          />
+          <img
+            class="icon"
+            src="assets/shared/desktop/youtube.svg"
+            alt="youtube icon"
+          />
+          <img
+            class="icon"
+            src="assets/shared/desktop/twitter.svg"
+            alt="twitter icon"
+          />
+          <img
+            class="icon"
+            src="assets/shared/desktop/pinterest.svg"
+            alt="pinterest icon"
+          />
+          <img
+            class="icon"
+            src="assets/shared/desktop/instagram.svg"
+            alt="instagram icon"
+          />
+        </div>
+        <!-- nav -->
+        <nav class="footer-nav-bar">
+          <ul class="menu">
+            <li>
+              <a class="menu-items btn-white" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="menu-items btn-white" href="stories.html">Stories</a>
+            </li>
+            <li>
+              <a class="menu-items btn-white" href="features.html">Features</a>
+            </li>
+            <li>
+              <a class="menu-items btn-white" href="pricing.html">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-second-div">
+        <div class="btn-box">
+          <a class="btn btn-white" href="#">Get an invite</a>
+          <img
+            class="arrow-icon arrow-white"
+            src="assets/shared/desktop/arrow.svg"
+            alt="arrow icon"
+          />
+        </div>
+        <span class="copyright">Copyright 2019. All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
